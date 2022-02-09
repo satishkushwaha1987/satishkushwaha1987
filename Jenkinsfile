@@ -3,6 +3,6 @@ node {
 	    checkout scm
 	 }
    stage('Build') { 
-                sh 'mvn -B -DskipTests clean package'
+                (mvn -B -DskipTests clean package)
                 }
 }
