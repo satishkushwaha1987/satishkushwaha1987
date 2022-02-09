@@ -1,7 +1,4 @@
 pipeline {
-	stage('SCM Checkout'){
-	    checkout scm
-	    }
    stages {
        agent {
           docker {
